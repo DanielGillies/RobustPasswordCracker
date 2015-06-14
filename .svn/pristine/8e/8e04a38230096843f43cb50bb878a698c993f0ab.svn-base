@@ -1,0 +1,29 @@
+Author: Daniel Gillies
+Program: Password Cracker
+
+**************************
+** What is this program **
+**************************
+This program is used to demonstrate how tougher passwords will take much longer to crack using hash comparing than non tough passwords.
+For the sake of this program, a tough password is one that consists of multiple words just strung together.  I use a list of 10,000
+of the most common passwords and do basic transformations and cracks against them and calculate how long that takes.  I then do all possible
+2 word combinations of the 10,000, which adds up to 49,995,000 combinations.  I generate a report showing how much longer it takes to do
+that, what appears to be simple, modification to the list and check against those new words.  I then extrapolate that data in the report to 
+estimate how long it would take to do all possible 3 word combinations in the english dictionary, which is 8.4033255e+14 possible combinations.  
+
+**************************
+** Output of the proram **
+**************************
+1) This program generates a report discussing the before mentioned topics
+2) At the end of execution, it will also generate a line graph to demonstrate the relational differences in the times taken to run each test
+
+**************************
+******* How to use *******
+**************************
+1) Run the program with "passInput.txt" as a command line argument
+2) Select your desired hashing algoritm (md5 is the current test file)
+3) Decide if you would like to do the word combining example.  The graph looks much better if you do not, and the test takes about 20 minutes
+	so only reply with "y" if you have time to wait.
+4) Program will run through tests, and will generate a file called PasswordCrackReport.txt with all of the cracked passwords and times it took for 
+	each test.
+5) Program will also generate a graph upon completion of the last test
